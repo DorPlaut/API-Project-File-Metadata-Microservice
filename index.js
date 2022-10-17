@@ -34,7 +34,7 @@ app.post('/api/fileanalyse', upload.single('upfile'), async (req, res) => {
   }
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 app.listen(port, function () {
   console.log('Your app is listening on port ' + port);
 });
